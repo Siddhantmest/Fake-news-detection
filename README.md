@@ -19,4 +19,4 @@ Extending further, considering the claim labels in the dataset as "ground truth"
         
 ## Improvement
 
-The code to concatenate the articles and preprocess them corresponding the claims was taking considerable amount of time (1300 Sec). In order to speed up the code as well as improve the accuracy of the predictions **cosine similarity is used along with text summarization**. It helped to speed up the code by 54.77%
+The code to concatenate the articles and preprocess them along with the claims was taking considerable amount of time (910 Sec). In order to speed up the code as well as improve the accuracy of the predictions **cosine similarity is used to perform text summarization** on articles and the function `clean_data` was modified to speed up the process involved in the cleaning of the text. The entire changes helped to speed up the code by 2.81 times.
