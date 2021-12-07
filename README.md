@@ -20,3 +20,7 @@ Extending further, considering the claim labels in the dataset as "ground truth"
 ## Improvement
 
 The code to concatenate the articles and preprocess them along with the claims was taking considerable amount of time (910 Sec). In order to speed up the code as well as improve the accuracy of the predictions **cosine similarity is used to perform text summarization** on articles and the function `clean_data` was modified to speed up the process involved in the cleaning of the text. The entire changes helped to speed up the code by 2.81 times.
+
+## Link to the dataset - 
+1. [dataset](https://drive.google.com/file/d/1xUVctZIyiPdeVvd8U52pHkFsL6WmJeMm/view?usp=sharing) it is a zip file which has the folder containing the articles and a json file containing the article corresponding to the claims
+2. The train.json in the zip file is not correct so in order to have the code running properly use [file](https://drive.google.com/file/d/1gXRlLOV8Y7GnhNVVDdbyuxLkopRWsDRU/view?usp=sharing)
